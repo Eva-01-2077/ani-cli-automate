@@ -38,9 +38,9 @@ if [[ "$choice" == "N" || "$choice" == "n" ]]; then
     # Demander à l'utilisateur l'adresse IP du NAS
     read -p "Entrez l'adresse IP du NAS : " nas_ip
 
-    # Adresse IP, nom d'utilisateur et mot de passe du NAS
-    nas_user="Backup"
-    nas_password=""
+    # Demander à l'utilisateur son nom d'utilisateur et son mot de passe pour le NAS
+    read -p "Entrez votre nom d'utilisateur pour le NAS : " nas_user
+    read -s -p "Entrez votre mot de passe pour le NAS : " nas_password
 
     # Utilisation de sshpass pour fournir le mot de passe en ligne de commande (attention à la sécurité)
     sshpass -p "$nas_password" scp -r "$anime_name" "$nas_user@$nas_ip:/chemin/vers/destination/sur/le/nas/"
@@ -51,4 +51,3 @@ else
 fi
 
 echo "Script terminé !"
-
