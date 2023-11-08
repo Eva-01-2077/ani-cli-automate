@@ -40,7 +40,7 @@ if [[ "$choice" == "N" || "$choice" == "n" ]]; then
 
     # Adresse IP, nom d'utilisateur et mot de passe du NAS
     nas_user="Backup"
-    nas_password="zypmoh-cafgew-4qunsU"
+    nas_password=""
 
     # Utilisation de sshpass pour fournir le mot de passe en ligne de commande (attention à la sécurité)
     sshpass -p "$nas_password" scp -r "$anime_name" "$nas_user@$nas_ip:/chemin/vers/destination/sur/le/nas/"
