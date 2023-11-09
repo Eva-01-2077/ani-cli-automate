@@ -4,6 +4,8 @@ Script de Téléchargement d'Anime avec Transfert vers un NAS
 
 Ce script Bash permet de télécharger des épisodes d'anime spécifiés par l'utilisateur, de les renommer et de les transférer vers un NAS ou de les conserver localement. Il utilise ani-cli pour le téléchargement des épisodes et sshpass pour le transfert vers un NAS.
 
+Ce script et a effectuer et a executer en tant qu'administrateur sur la machine pour l'instalaltion des prérequis des différents paquet qui seront utile pour l'utilisation du script.sh
+
 Prérequis
 
 Système basé sur Debian/Ubuntu
@@ -17,7 +19,7 @@ Clonez ce dépôt ou téléchargez le fichier anime_downloader.sh.
 Assurez-vous que le fichier a les permissions d'exécution : chmod +x anime_downloader.sh
 Utilisation
 
-Exécutez le script : ./anime_downloader.sh
+Exécutez le script : ./script.sh
 Suivez les instructions pour entrer le nom de l'anime et la plage d'épisodes que vous souhaitez télécharger.
 Le script téléchargera les épisodes, les renommera et vous demandera si vous voulez les conserver localement ou les transférer vers un NAS.
 Si vous choisissez le transfert vers un NAS, vous devrez également entrer l'adresse IP du NAS.
@@ -32,6 +34,8 @@ ENGLISH VERSION
 Anime Download Script with NAS Transfer
 
 This Bash script allows users to download specified anime episodes, rename them, and transfer them to a NAS or keep them locally. It uses ani-cli for episode downloads and sshpass for NAS transfers.
+
+This script must be carried out and executed as an administrator on the machine for the installation of the prerequisites of the different packages which will be useful for using the script.sh
 
 Prerequisites
 
