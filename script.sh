@@ -2,6 +2,7 @@
 
 # Installer les dépendances pour ani-cli (pour les systèmes basés sur Debian/Ubuntu)
 sudo apt-get update
+sudo apt-get install pip3
 sudo apt-get install -y python3 python3-pip ffmpeg sshpass
 
 # Installer ani-cli via pip
